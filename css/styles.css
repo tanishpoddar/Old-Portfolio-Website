@@ -1,4 +1,4 @@
-/* Hero CTA Buttons */
+    /* Hero CTA Buttons */
 .hero-cta {
     margin-top: 2rem;
     display: flex;
@@ -549,7 +549,10 @@
     box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
 }
 
-/* Alternating Items */
+.timeline-item.right::after {
+    left: 0;  /* Position at the start of right timeline items */
+    transform: translate(-50%, -50%);  /* Same transform to center */
+}
 .timeline-item.left {
     left: 0;
 }
