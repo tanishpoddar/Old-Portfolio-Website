@@ -27,9 +27,6 @@
 
 ## Contact
 For any questions or feedback, please contact Tanish Poddar at tanishpoddar.18@gmail.com.
-
-## License
-This project is licensed under the [MIT License](LICENSE).
 ---
 Live Website : https://tanish-poddar.is-a.dev/
 
