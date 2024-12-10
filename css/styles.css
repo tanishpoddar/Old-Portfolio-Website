@@ -521,6 +521,7 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 1;
 }
 
 /* Timeline Items */
@@ -538,12 +539,12 @@
     position: absolute;
     width: 20px;
     height: 20px;
-    right: -10px;
+    top: 50%;
+    left: 100%;  /* Position at the end of the timeline item */
+    transform: translate(-50%, -50%);  /* Center the dot both horizontally and vertically */
     background: var(--accent);
     border: 4px solid rgba(15, 23, 41, 0.7);
     border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
     z-index: 1;
     box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
 }
@@ -555,10 +556,6 @@
 
 .timeline-item.right {
     left: 50%;
-}
-
-.timeline-item.right::after {
-    left: -10px;
 }
 
 /* Timeline Content */
@@ -619,8 +616,8 @@
     }
 
     .timeline-item::after {
-        left: 21px;
-        right: auto;
+        left: 0;  /* Position at the start of right timeline items */
+        transform: translate(-50%, -50%);  /* Same transform to center */
     }
 
     .timeline-item.right {
