@@ -4,22 +4,63 @@
     <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tanish Poddar - Software Developer Portfolio | Full-Stack Developer, Android Developer, Graphic Designer">
-    <meta name="keywords" content="software developer, full-stack, android development, kotlin, graphic design">
+    <meta name="description" content="Tanish Poddar - Full-Stack & Android Developer, Graphic Designer. Expert in web development, Kotlin, and creative design with a portfolio of innovative projects.">
+    <meta name="keywords" content="Tanish Poddar, software developer, full-stack developer, android development, kotlin, graphic design, web development">
     <meta name="author" content="Tanish Poddar">
     <meta name="theme-color" content="#111827">
     
+    <!-- Resource Hints -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+    <link rel="preload" href="js/background.js" as="script">
+    <link rel="preload" href="files/images/favicon.png" as="image">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://tanish-poddar.is-a.dev/">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Tanish Poddar - Software Developer Portfolio">
+    <meta property="og:description" content="Full-Stack & Android Developer, Graphic Designer. Expert in web development, Kotlin, and creative design.">
+    <meta property="og:url" content="https://tanish-poddar.is-a.dev/">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tanish Poddar - Software Developer Portfolio">
+    <meta name="twitter:description" content="Full-Stack & Android Developer, Graphic Designer specializing in web development and creative solutions.">
+    
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; img-src 'self' data: https:; font-src 'self' https:; connect-src 'self';">
+    
     <title>Tanish Poddar - Portfolio</title>
 
-    <!-- Preconnect to External Resources -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Stylesheets with SRI -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" 
+          integrity="sha384-JZR6SpejhU2jmr1PVcG1UTU/E5W6YFSL1Y0jFX5MXU6Y0SUXUQsJKEliYQFZH2q7" 
+          crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="files\images\favicon.png" type="image/png">
+    <link rel="icon" href="files/images/favicon.png" type="image/png">
 
-    <!-- External Scripts -->
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Tanish Poddar",
+        "url": "https://tanish-poddar.is-a.dev/",
+        "jobTitle": "Software Developer",
+        "description": "Full-Stack Developer and Android Developer specializing in web development and mobile applications",
+        "skills": ["Full-Stack Development", "Android Development", "Kotlin", "Graphic Design"],
+        "email": "tanishpoddar.18@gmail.com",
+        "sameAs": [
+            "https://github.com/tanishpoddar",
+            "https://linkedin.com/in/tanish-poddar"
+        ]
+    }
+    </script>
+
+    <!-- External Scripts with SRI -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
 </head>
 
@@ -35,6 +76,11 @@
             </div>
         </div>
         <div class="text">Loading...</div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" aria-hidden="true">
+        <div class="progress-bar"></div>
     </div>
 
     <!-- Main Content -->
@@ -237,6 +283,20 @@
             </svg>
         </button>
     </div>
+    <!-- CORS Headers (to be added in server configuration) -->
+    <!--
+    Access-Control-Allow-Origin: *
+    Access-Control-Allow-Methods: GET, POST
+    Access-Control-Allow-Headers: Content-Type
+    Access-Control-Max-Age: 86400
+    -->
+
+    <!-- Cache Control Headers (to be added in server configuration) -->
+    <!--
+    Cache-Control: public, max-age=31536000
+    ETag: "random-etag-value"
+    Last-Modified: [timestamp]
+    -->
 
     <!-- Scripts -->
     <script src="js/main.js" defer></script>
